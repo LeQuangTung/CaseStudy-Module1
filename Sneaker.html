@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nike</title>
+  <link rel="stylesheet" href="CaseStudy.css">
+
+</head>
+<body>
+<nav>
+  <div class="menu">
+    <div class="logo">
+      <ul>
+        <li><img src="Ảnh/images.jpg" alt=""/></li>
+        <li><a  href="CaseStudy.html" target="_blank">KingSneaker</a></li>
+      </ul>
+    </div>
+    <ul>
+      <li><a>SNEAKER</a></li>
+      <li><a>CLOTHING</a></li>
+      <li><a>SALE OFF</a></li>
+      <li><a onclick="login()" id="login">LOG IN</a></li>
+      <li>
+        <button id="cart">
+          <i class="shopping-basket" aria-hidden="true"></i>Giỏ Hàng</button>
+      </li>
+    </ul>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="modal-title">Giỏ Hàng</a>
+      </div>
+      <div class="modal-body">
+        <div class="cart-row">
+          <span class="cart-item">Sản Phẩm</span>
+          <span class="cart-price">Giá</span>
+          <span class="cart-quantity">Số Lượng</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Tổng Cộng:</strong>
+          <span class="cart-total-price">0VNĐ</span>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<aside></aside>
+
+<div id="test" class="test">
+  <input type="checkbox" id="a" onchange="filterBrands()" ><label>Nike</label>
+  <input type="checkbox" id="Air Jordan" onchange="filterBrands1()"><label>Air Jordan</label><br>
+  <input type="checkbox" id="Black" onchange="filterColor()"><label>Black</label>
+  <input type="checkbox" id="White" onchange="filterColor1()"><label>White</label><br>
+  <input type="checkbox" id="10US/9UK" onchange="filterSize()"><label>10US/9UK</label>
+  <input type="checkbox" id="9US/8UK" onchange="filterSize1()"><label>9US/8UK</label>
+</div>
+
+<div id="formlogin"></div>
+<div id="sanpham" ></div>
+<script src="Casestudy.js"></script>
+<script src="Sneaker.js"></script>
+</body>
+</html>
